@@ -1,0 +1,18 @@
+{
+  "name": "exam_assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^6.2.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "superstatic": "^7.1.0"
+  },
+  "scripts": {
+    "start": "superstatic src --port 3005",
+    "cyp": "cypress open",
+    "test": "npm-run-all -p start cyp"
+  }
+}
